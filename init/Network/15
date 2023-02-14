@@ -1,0 +1,6 @@
+echo '46.19.122.85 intra.42.fr' >> /etc/hosts
+
+or
+
+vim/nano/vi etc.   /etc/hosts to make manual changes
+sudo if needed

@@ -1,0 +1,95 @@
+body {
+    background-color: #f1f4c1d0;
+    text-align: center;
+    margin-top: 1vh;
+}
+h1 { 
+    color: rgb(18, 40, 15); font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 15vh; font-weight: bold;
+    line-height: 1; text-align: center; margin-bottom: 1vw; margin-top: 3vw; }
+
+.dropbtn, .dropbtn_in, .dropbtn_in_2 {
+    background-color: #ffffffd0;
+    color: #3d462ad0;
+    border-width: 1px;
+    padding: 12px;
+    font-size: 2vh;
+  }
+  
+  .dropdown, .dropdown_in, .dropdown_in_2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5vh;
+  }
+  .dropdown-content, .dropdown-content_in, .dropdown-content_in_2 {
+    display: none;
+    position: absolute;
+    background-color: #e7e88e;
+    min-width: 250px;
+    box-shadow: 0px 5px 0px 0px rgb(219, 194, 66);
+  }
+  
+  .dropdown-content a, .dropdown-content_in a, .dropdown-content_in_2 a {
+    color: rgb(148, 53, 53);
+    padding: 12px 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight:bold ;
+    font-size: 1.5vh;
+    display: block;
+    text-decoration: none;
+  }                                          
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16vh;
+    margin-right: 11vh;
+    
+  }
+  
+  .flex-container > div {
+    background-color: #ffffffd0;
+    margin: 30px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .flex-container button {
+    border: none;
+    border-radius: 20px;
+    outline: 0;
+    padding: 12px;
+    color: rgb(72, 79, 64);
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 1vh;
+  }
+  .flex-container p {
+    margin: auto;
+  }
+  .flex-container label {
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 1vh;
+  }
+  .resize {
+    width: 200px;
+    height: 200px;
+  }
+  .dropdown-content a:hover {background-color: rgb(245, 124, 124);}
+  .dropdown-content_in a:hover {background-color: rgb(245, 124, 124);}
+  .dropdown-content_in_2 a:hover {background-color: rgb(245, 124, 124);}
+
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown_in:hover .dropdown-content_in {display: block;}
+  .dropdown_in_2:hover .dropdown-content_in_2 {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #eeae4f;}
+  .dropdown_in:hover .dropbtn_in {background-color: #eeae4f;}
+  .dropdown_in_2:hover .dropbtn_in_2 {background-color: #eeae4f;}

@@ -1,0 +1,283 @@
+.topbar {
+	position: relative;
+	top: 0.5vw;
+	height: 7.3vw;
+}
+
+.left_bar {
+	position: absolute;
+	left: 13vw;
+	top: 8.5vw;
+	padding: 1vw;
+	width: 7.5vw;
+	height: 22.5vw;
+}
+
+.mid_bar {
+	position: absolute;
+	right: 0vw;
+	width: 100%;
+	height: 31vw;
+	top: 9.5vw;
+
+}
+
+.right_bar {
+	position: absolute;
+	right: 13vw;
+	top: 8.5vw;
+	padding: 1vw;
+	width: 7.5vw;
+	height: 22.5vw;
+}
+
+.green_bar {
+	position: absolute;
+	left: 9vw;
+	top: 35vw;
+	padding: 1vw;
+	width: 28vw;
+	height: 9vw;
+}
+
+.rcorners1 {
+	border-radius: 10px;
+	background: rgb(145, 145, 145);
+	width: 75%;
+	height: 100%;
+	position: center;
+	box-shadow: 10px 10px 10px rgb(0 0 0 / 1);
+}
+
+.rcorners2 {
+	border-radius: 10px;
+	background: rgb(145, 145, 145);
+	width: 100%;
+	height: 100%;
+	position: center;
+	box-shadow: 10px 10px 10px rgb(0 0 0 / 1);
+}
+
+.rcorners3 {
+	border-radius: 10px;
+	background: rgb(145, 145, 145);
+	width: 54%;
+	height: 100%;
+	box-shadow: 10px 10px 10px rgb(0 0 0 / 1);
+}
+
+.rcorners_green {
+	border-radius: 10px;
+	background: rgb(135, 255, 135);
+	width: 100%;
+	height: 100%;
+	position: center;
+	box-shadow: 10px 10px 10px rgb(0 0 0 / 1);
+}
+
+.doft_banner {
+	height: 100%;
+	position: absolute;
+	left: 12.5%;
+	top: 10%;
+}
+
+.mag_glass {
+	height: 100%;
+	position: absolute;
+	right: 14%;
+	top: 13.5%;
+}
+
+.close_x {
+	height: 100%;
+	position: absolute;
+	right: 13%;
+	top: 80%;
+}
+
+.refresh {
+	height: 17% ;
+	position: absolute;
+	right: 13%;
+	top: 5%;
+}
+
+.cluster {
+	height: 100%;
+	width: 52.5%;
+	position: absolute;
+	padding: .8%;
+}
+
+.arrow {
+	height: 100%;
+	position: absolute;
+	top: 6%;
+	left: 28%;
+}
+
+.fist {
+	height: 15%;
+	position: absolute;
+	top: 23%;
+	left: 28%;
+}
+
+.eye {
+	height: 15%;
+	width: 40%;
+	position: absolute;
+	top: 38%;
+	left: 20%;
+	border: 0.3vw solid red;
+	margin: 0.4vw;
+}
+
+.tool {
+	height: 15%;
+	position: absolute;
+	top: 59%;
+	left: 28%;
+}
+
+.chat {
+	height: 15%;
+	position: absolute;
+	top: 75%;
+	left: 28%;
+}
+
+.book {
+	height: 95%;
+	position: absolute;
+	top: 7%;
+	left: 29%;
+}
+
+.towel {
+	height: 95%;
+	position: absolute;
+	top: 27%;
+	left: 29%;
+}
+
+.wall {
+	position: absolute;
+	left: 15%;
+	top: 40%;
+	width: 70%;
+	height: 15%;
+}
+
+.brick1 {
+	height: 50%;
+	width: 25%;
+	position: absolute;
+	left: 0%
+}
+
+.brick2 {
+	height: 50%;
+	width: 25%;
+	position: absolute;
+	left: 25%
+}
+
+.brick3 {
+	height: 50%;
+	width: 25%;
+	position: absolute;
+	left: 50%
+}
+
+.brick4 {
+	height: 50%;
+	width: 25%;
+	position: absolute;
+	left: 75%
+}
+
+#verdana {
+	position: absolute;
+	left: 6%;
+	top: 18%;
+	vertical-align: bottom;
+	font-size: .8vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#georgia {
+	position: absolute;
+	left: 14%;
+	top: 9.5%;
+	vertical-align: bottom;
+	font-size: 2vw;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight:lighter;
+}
+
+#verdana2 {
+	position: absolute;
+	left: 34%;
+	top: 18%;
+	vertical-align: bottom;
+	font-size: 0.8vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#verdana-blood {
+	position: absolute;
+	left: 6%;
+	top: 29%;
+	vertical-align: bottom;
+	font-size: .8vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-shadow: 10px 5px 3px rgb(255, 0, 0);
+} 
+
+#verdana3 {
+	position: absolute;
+	left: 6%;
+	top: 40%;
+	vertical-align: bottom;
+	font-style: italic;
+	font-size: 0.8vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textbox {
+	display:inline-block;
+	height:auto;
+	position: absolute;
+	left: 6%;
+	top: 55%;
+	width: 60%;
+	height: 100%;
+}
+
+.submit {
+	position: absolute;
+	left: 75%;
+	top: 55%;
+	width: 60%;
+	height: 100%;
+}
+
+.ikea {
+	position: absolute;
+	left: 14vw;
+	top: 18.5vw;
+	padding: 1vw;
+	width: 7.5vw;
+	height: 10vw;
+}
+
+.apple {
+	position: absolute;
+	left: 34vw;
+	top: 15vw;
+	padding: 1vw;
+	width: 5vw;
+	height: 5vw;
+}

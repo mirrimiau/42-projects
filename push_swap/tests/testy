@@ -1,0 +1,16 @@
+#!/bin/bash
+
+(( a = RANDOM - RANDOM))
+(( b = RANDOM - RANDOM))
+(( c = RANDOM - RANDOM))
+(( d = RANDOM - RANDOM))
+(( e = RANDOM - RANDOM))
+(( f = RANDOM - RANDOM))
+(( g = RANDOM - RANDOM))
+(( h = RANDOM - RANDOM))
+(( i = RANDOM - RANDOM))
+(( j = RANDOM - RANDOM))
+
+echo -e "$a $b $c $d $e $f $g $h $i $j"
+./push_swap "$a $b $c $d $e $f $g $h $i $j" | ./checker "$a $b $c $d $e $f $g $h $i $j"
+./push_swap "$a $b $c $d $e $f $g $h $i $j" | wc -l

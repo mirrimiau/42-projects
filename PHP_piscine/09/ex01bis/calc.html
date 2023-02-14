@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div>
+		<form name="myForm" action="calc.html" method="post">
+			<input type="text" name="left" required />
+			<select name="operation">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type="text" name="right" value="" required />
+			<input type="submit" name="submit" value="Try me!" />
+		</form>
+	</div>
+	<script>
+		window.setInterval(function showPopup() {
+			alert("Please, use me...");
+		}, 30000);
+
+		$('form[name="myForm"]').submit(function () {
+			var left = document.forms["myForm"]["left"].value;
+			var leftInt = parseInt(left);
+			var right = document.forms["myForm"]["right"].value;
+			var rightInt = parseInt(right);
+			var operation = document.forms["myForm"]["operation"].value;
+			var ans;
+			if (isNaN(left) || isNaN(right) || leftInt < 0 || rightInt < 0 || left.indexOf('.') != -1 || right.indexOf('.') != -1) {
+				alert("Error :(");
+			}
+			else if (((operation == "/" || operation == "%") && rightInt == 0)) {
+				alert("It's over 9000!");
+				console.log("It's over 9000!");
+			}
+			else {
+				if (operation === "+") {
+					ans = leftInt + rightInt;
+				}
+				if (operation === "-") {
+					ans = leftInt - rightInt;
+				}
+				if (operation === "*") {
+					ans = leftInt * rightInt;
+				}
+				if (operation === "/") {
+					ans = leftInt / rightInt;
+				}
+				if (operation === "%") {
+					ans = leftInt % rightInt;
+				}
+				console.log(ans);
+				alert(ans);
+			}
+			return false;
+		})
+	</script>
+</body>
+
+</html>

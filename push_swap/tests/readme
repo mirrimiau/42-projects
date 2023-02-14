@@ -1,0 +1,37 @@
+Commands:
+
+ctrl + D : stop checker
+p (push)
+s (swap)
+r (rotate)
+rr (reverse rotate)
+
+Targets:
+a = stack a
+b = stack b
+r = both a and b
+
+
+For line count:
+ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l
+or
+./push_swap 4 67 3 87 23 | wc -l
+
+For checking OK/KO:
+ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker $ARG
+or
+./push_swap 4 67 3 87 23 | ./checker 4 67 3 87 23 
+
+debugging:
+./checker -v 4 67 3 87 23
+or
+./checker -v "4 67 3 87 23"
+
+visual tool:
+move 'pyvix.py' to root folder and run with:
+python3 pyviz.py `ruby -e "puts (1..20).to_a.shuffle.join(' ')"`
+(insert any values you want for the border values instead of '(1..20)')
+
+Handy tool for a list of space separated pseudo-random integers:
+https://ezcalc.me/pseudo-random-number-generator/
+(Might output duplicates, which results in push_swap/checker ERROR. Helps if you set min-max boundaries large enough)

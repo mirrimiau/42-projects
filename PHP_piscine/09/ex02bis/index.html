@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<script>
+		var cookieStash = Array;
+
+		$(document).ready(function () {
+			if (document.cookie != "") {
+				cookieStash = document.cookie.split(';');
+				var i = 0;
+				while (cookieStash[i]) {
+
+					addElement(cookieStash[i].split('=')[1]);
+					i++;
+				}
+			}
+		});
+	</script>
+	<button name="new">New</button><br><br>
+	<script>
+		$('button[name="new"]').click(function () {
+			let task = prompt("New task:");
+			if (task !== "" && task !== null) {
+				addElement(task);
+			}
+		});
+	</script>
+	<div id="ft_list">
+		<div id="start"></div>
+	</div>
+	<script>
+		function addElement(task) {
+			const newNode = document.createElement("div");
+			newNode.onclick = function () {
+				var sure = confirm("Are you sure?");
+				if (sure) {
+					this.parentElement.removeChild(this);
+					document.cookie = task + "=" + task +
+						";expires=Thu, 01 Jan 1970 00:00:01 GMT";
+				}
+			}
+			const textNode = document.createTextNode(task);
+			newNode.appendChild(textNode);
+			const list = document.getElementById("ft_list");
+			list.insertBefore(newNode, list.children[0]);
+			document.cookie = task + "=" + task;
+		}
+	</script>
+</body>
+
+</html>

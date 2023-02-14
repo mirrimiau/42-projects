@@ -1,0 +1,31 @@
+#shoppingtitle {
+	margin-top: -30px;
+	font-size: 40px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 16vh;
+    margin-right: 11vh;  
+  }
+
+.list {
+	width: 35%;
+	text-align: center;
+	margin: auto auto auto auto;
+	background-color: white;
+	border-radius: 12px;
+	height: 45px;
+	box-shadow: 5px 5px 5px gray;
+}
+
+.remove {
+	position: absolute;
+	top: 40%;
+	margin-left: 50px;
+}
+
+.products {
+	position: relative;
+}

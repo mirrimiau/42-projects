@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="redsquare" style="width:200px; height:200px; background-color:red; border-radius: 200px;"></div>
+	<script>
+		$("div").click(function () {
+			var box = document.getElementById("redsquare");
+			var currentWidth = parseInt(box.style.width, 10);
+			if (currentWidth >= 420) {
+				box.style.width = "200px";
+			}
+			else {
+				box.style.width = currentWidth + 10 + "px";
+			}
+			box.style.height = box.style.width
+			box.style.borderRadius = box.style.width;
+			if (box.style.backgroundColor == "red") {
+				box.style.backgroundColor = "green";
+			}
+			else if (box.style.backgroundColor == "green") {
+				box.style.backgroundColor = "blue";
+			}
+			else {
+				box.style.backgroundColor = "red"
+			}
+		});
+
+		$("div").mouseleave(function () {
+			var box = document.getElementById("redsquare");
+			var currentWidth = parseInt(box.style.width, 10);
+			if (currentWidth != 200) {
+				box.style.width = currentWidth - 5 + "px";
+				box.style.height = box.style.width
+				box.style.borderRadius = box.style.width;
+			}
+			if (box.style.backgroundColor == "red") {
+				box.style.backgroundColor = "blue";
+			}
+			else if (box.style.backgroundColor == "blue") {
+				box.style.backgroundColor = "green";
+			}
+			else {
+				box.style.backgroundColor = "red"
+			}
+		});
+
+	</script>
+</body>
+
+</html>
